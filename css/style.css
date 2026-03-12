@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    background-color: #f1f6fc31;
+}
+section, footer{
+    padding: 56px 0;
+}
+h3{
+    font-size: 50px;
+}
+p{
+    margin: 10px;
+    color: #0000009c;
+}
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+/*estilizaçao dos botoes do menu*/
+.btn{
+    background-color: #4f9cf9;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.1s ease;
+}
+.btn:hover{
+    background-color: #3580db;
+}
+header{
+    background: blue;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/*alinhamento da menu*/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+/*alinhamento dos botoes*/
+nav ul{
+    display: flex;
+    align-items: center;
+}
+/*estilizaçao dos textos dentro dos botoes*/
+nav ul a{
+    color: white;
+    margin: 0 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+}
+nav ul a:not(.btn):after{
+    content: "";
+    background-color: #4f9cf9;
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+/*animaçao dos botoes*/
+nav ul a:hover::after{
+    width: 100%;
+
+}
+.banner{
+    display: flex;
+    justify-content: center;
+}
+/*estilizaçao do texto ao todo*/
+.banner .banner-text{
+    margin: 150px;
+    text-align: center;
+    padding: 0 90px;
+}
+/*estilizaçao do nome da empresa*/
+.banner .banner-text h1{
+    font-size: 96px;
+    color: white;
+}
+/*estilizaçao sobre oque fazemos*/
+.banner .banner-text p{
+    font-size: 20px;
+    color: #ffffffb7;
+    font-weight: lighter;
+    margin: 18px 0px;
+}
+/*estilizaçao do orçamento*/
+.faca-orcamento .container{
+    display: flex;
+    align-items: center;
+}
+/*estilizaçao de todo o texto do orçamento*/
+.faca-orcamento .faca-orcamento-text{
+    width: 50%;
+    padding: 0px 40px;
+}
+/*estilizaçao do h3 do orçamento*/
+.faca-orcamento .faca-orcamento h3{
+    font-size: 53px;
+}
+/*estilizaçao do paragrafo do orçamento*/
+.faca-orcamento .faca-orcamento p{
+    margin: 5px 0 10px 0;
+}
+/*estilizaçao da imagem do orçamento*/
+.faca-orcamento .faca-orcamento-img{
+    width: 50%;
+}
